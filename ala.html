@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ma Présentation</title>
+  <link rel="stylesheet" type="text/css" href="ala.css">
+  
+    <!-- Autres balises d'en-tête -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="ala.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.1.1/dist/scrollreveal.min.js"></script>
+
+  </head>
+  
+
+
+  
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#home-section1" id="home-link">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#skills-section1">Skills</a></li>
+      <li><a href="#Resume-section">Resume</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+  </div>
+  <section class="home-section"id="home-section1">
+    <div class="profile-content">
+      <p id="intro">Je suis un ingénieur.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/selmi.ala.92" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/a.l.a.selmi/?hl=fr" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/votre-profil-linkedin" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+    
+  
+  <section id="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="photos/281842720_1695702970788222_3344328474019381269_n.jpg" alt="My Photo" class="animate-on-scroll">
+      <p>Je suis actuellement étudiant en première année du cycle d'ingénieur informatique à l'esprit.</p>
+      
+      <div class="personal-info">
+        <h3>Informations personnelles :</h3>
+        <ul>
+          <li>Téléphone : <span>+1234567890</span></li>
+          <li>Adresse : <span>123 rue du Paradis, Ville, Pays</span></li>
+          <li>Date d'anniversaire : <span>1er janvier 1990</span></li>
+          <li>E-mail : <span>exemple@mail.com</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="skills-section1">
+    <h2>Skills</h2>
+    <div class="skills-content">
+      <h3>Compétences techniques :</h3>
+  <ul>
+    <li>Développement web (front-end/back-end)</li>
+    <li>Conception et développement d'applications mobiles</li>
+    <li>Bases de données (conception, requêtes SQL)</li>
+    <li>Débogage et résolution de problèmes techniques</li>
+    <li>Analyse et modélisation des données</li>
+    <li>Intégration d'API et de services tiers</li>
+    <li>Gestion de versions avec Git</li>
+    <li>Conception et développement d'interfaces utilisateur</li>
+    <li>Tests et validation du code</li>
+    <li>Optimisation des performances des applications</li>
+  </ul>
+  
+  <h3>Langages de programmation :</h3>
+  <ul>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>HTML/CSS</li>
+    <li>Java</li>
+    <li>C++</li>
+    <li>SQL</li>
+    <li>PHP</li>
+    <li>Ruby</li>
+    <li>Swift</li>
+    <li>Kotlin</li>
+  </ul>
+    </div>
+  </section>
+
+  <section id="Resume-section">
+    <h2>Resume</h2>
+    <div class="Resume-section1">
+      <h3>Compétences techniques :</h3>
+  <ul>
+    <li>Développement web (front-end/back-end)</li>
+    <li>Conception et développement d'applications mobiles</li>
+    <li>Bases de données (conception, requêtes SQL)</li>
+    <li>Débogage et résolution de problèmes techniques</li>
+    <li>Analyse et modélisation des données</li>
+    <li>Intégration d'API et de services tiers</li>
+    <li>Gestion de versions avec Git</li>
+    <li>Conception et développement d'interfaces utilisateur</li>
+    <li>Tests et validation du code</li>
+    <li>Optimisation des performances des applications</li>
+  </ul>
+
+  </section>
+
+  <section id="contact-section">
+    <h2>Contact</h2>
+    <div class="contact-content">
+      <form>
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+  <button id="back-to-top-btn">haut de pasge</button>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <button id="back-to-top">Haut de page</button>
+    </div>
+  </footer>
+
+  <script>
+    function animateOnScroll() {
+      var elements = document.querySelectorAll('.animate-on-scroll');
+
+      function checkIfInView() {
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          var bounding = element.getBoundingClientRect();
+
+          if (bounding.top + bounding.height >= 0 && bounding.top <= window.innerHeight) {
+            element.classList.add('show');
+          }
+        }
+      }
+
+      // Call the function initially to check if any elements are already in view
+      checkIfInView();
+
+      // Add event listener to check if elements are in view on scroll
+      window.addEventListener('scroll', checkIfInView);
+    }
+
+    // Call the animateOnScroll function to initialize the animation
+    animateOnScroll();
+  </script>
+  <script>
+    // Configuration de ScrollReveal
+    ScrollReveal().reveal('.animate-on-scroll', {
+      distance: '20px',
+      duration: 500,
+      delay: 200,
+      opacity: 0,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 200
+    });
+  </script>
+  
+ 
+  
+  
+</body>
+</html>
